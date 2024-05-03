@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleperformance ID Link Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@latest"></script>
+</head>
+<body>
+
+<!-- Logo BG-->
+<div class="logo-container">A
+    <img src="TPLogo11.png" alt="Logo">
+</div>
+
+<div class="popup-container">
+    
+    <div class="popup-content" id="step1">
+        <div class="additional-logo">
+            <img src="TPLogo11.png" alt="Additional Logo">
+        </div>
+        <h2>Enter your BMS Ident</h2>
+        <form id="id-form">
+            <label for="id">BMS Ident:</label>
+           
+            <input type="text" id="id" name="id" required placeholder="Enter your BMS Ident here:"> <!-- Added placeholder text -->
+            <p>Which language do your referrals prefer to work with? </p> <!-- Added sentence under input field -->
+
+            <button type="submit">Japan</button>
+        </form>
+    </div>
+
+    <div class="popup-content" id="step2" style="display: none;">
+        <div class="additional-logo">
+            <img src="TPLogo11.png" alt="Additional Logo">
+        </div>
+        <h2>Thank you for your referral!</h2>
+        <p>As we grow into Malaysia, become #MoreTogether as we #ElevateAsia, here are the links your friend can use so this is tagged to your profile into our Recruiting System.</p>
+        <div id="generated-link"></div>
+        <!-- Add buttons to share link via WhatsApp and Line -->
+        <button id="share-button-whatsapp">Share via WhatsApp  </button>
+        <button id="share-button-line">Share via Line</button>
+        
+        <div id="qrBox">
+            <img src="" id="qrImg">
+        </div>
+        <button onclick="generateQrCode()">or have your friend scanning this code above!</button>
+        <p>Thank you for your referral!</p>
+        <p>As we grow into Malaysia, become #MoreTogether as we #ElevateAsia, here are the links your friend can use so this is tagged to your profile into our Recruiting System.</p>
+        <h2>They can visit our locations in VR so they learn of us:</h2>
+
+        <div id="picture-container">
+            <img src="MicrosoftTeams-image.png" alt="Description of the image">
+        </div>
+        <p>The Talent Attraction Team</p>
+      
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
