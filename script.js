@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Generate the link using the entered ID number
-        const link = `https://careerseng-teleperformance.icims.com/jobs/45525/customer-success-specialist---japanese-support-%28penang%29/job?mode=job&iis=${id}`;
+        const link = `https://careerseng-teleperformance.icims.com/jobs/45525/customer-success-specialist---japanese-support-%28penang%29/job?mode=job&iis=RAF&iisn=${id}`;
         // Update the generated link display as a clickable link
         generatedLink.innerHTML = `<a href="${link}" target="_blank" class="generated-link">${link}</a>`;
         
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Generate the link using the entered ID number
-        const link = `https://careerseng-teleperformance.icims.com/jobs/37277/customer-success-specialist---mandarin/job?mode=job&iis=${id}`;
+        const link = `https://careerseng-teleperformance.icims.com/jobs/37277/customer-success-specialist---mandarin/job?mode=job&iis=RAF&iisn=${id}`;
         
         // Update the generated link display as a clickable link
         generatedLink.innerHTML = `<a href="${link}" target="_blank" class="generated-link">${link}</a>`;
